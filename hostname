@@ -1,8 +1,8 @@
 #!/bin/bash
 apt update && apt install -y htop curl
-IP=$(curl https://ifconfig.co/ip)
 
 echo "$HOSTNAME" > /etc/hostname
 hostname -F /etc/hostname
 
-echo "$IP $HOSTNAME $HOSTNAME" >> /etc/hosts
+echo "$ETH0_IP $HOSTNAME $HOSTNAME
+      $ETH0_IP6	$HOSTNAME $HOSTNAME" >> /etc/hosts
